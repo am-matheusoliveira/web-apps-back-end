@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS pedidos;
+
+CREATE DATABASE pedidos
+DEFAULT CHARACTER SET utf8mb4
+DEFAULT COLLATE utf8mb4_general_ci;
+
+USE pedidos;
+
+CREATE TABLE produtos (
+	codigo INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nome   VARCHAR(100) NOT NULL,
+	preco  DECIMAL(10,2) NOT NULL
+);
+
+SELECT * FROM produtos;
